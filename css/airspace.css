@@ -468,7 +468,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #portfolio-work .block .portfolio-contant ul li {
   float: left;
-  width: 32.22%
+  width: 32.22%;
   overflow: hidden;
   margin: 6px;
   position: relative;
@@ -476,11 +476,12 @@ font header .navbar-default .navbar-nav li a:hover {
 
 #portfolio-work .block .portfolio-contant ul li .image-container{
   width: 350px;
-  height: 250px;
+  height: 350px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 0%;
 }
+
 
 /*
 #portfolio-work .block .portfolio-contant ul li:hover .overly {

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Our Work
+title: Galleria
 permalink: /galleria/
 ---
 
@@ -29,115 +29,48 @@ permalink: /galleria/
                     <li class="filter" data-filter=".Cucina">Cucina</li>
                     <li class="filter" data-filter=".Interno">Interno</li>
                     <li class="filter" data-filter=".Esterno">Esterno</li>
-                    <li class="filter" data-filter=".Rimessaggio">Rimessaggio</li>
+                    <li class="filter" data-filter=".Staff">Staff</li>
                     <!--<li class="filter" data-filter=".Video">Video</li>-->
                 </ul>
               </div>
               <div class="portfolio-contant">
                 <ul id="portfolio-contant-active">
+                    {% for image in site.static_files %}
+                    {% if image.path contains 'img/interno' %}
+                    <li class="mix Interno">
+                        <div class="image">
+                            <div class="image-container" style="background-image: url({{ image.path }})"></div>
+                        </div>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                    {% for image in site.static_files %}
+                    {% if image.path contains 'img/esterno' %}
                     <li class="mix Esterno">
                         <div class="image">
-                          <div class="image-container" style="background-image: url({{site.baseurl}}/img/workinprogress/ancora.jpg)"></div>
-                        </div>
-                  </li>
-                    <li class="mix Interno">
-                        <div class="image">
-                            <div class="image-container" style="background-image: url({{site.baseurl}}/img/workinprogress/bicchieri.jpg)"></div>
+                            <div class="image-container" style="background-image: url({{ image.path }})"></div>
                         </div>
                     </li>
-                    <li class="mix Esterno">
+                    {% endif %}
+                    {% endfor %}
+                    {% for image in site.static_files %}
+                    {% if image.path contains 'img/staff' %}
+                    <li class="mix Staff">
                         <div class="image">
-                            <div class="image-container" style="background-image: url({{site.baseurl}}/img/workinprogress/cariola.jpg)"></div>
+                            <div class="image-container" style="background-image: url({{ image.path }})"></div>
                         </div>
                     </li>
-                    <li class="mix Interno">
+                    {% endif %}
+                    {% endfor %}
+                    {% for image in site.static_files %}
+                    {% if image.path contains 'img/cucina' %}
+                    <li class="mix Cucina">
                         <div class="image">
-                            <div class="image-container" style="background-image: url({{site.baseurl}}/img/workinprogress/lavagna.jpg)"></div>
+                            <div class="image-container" style="background-image: url({{ image.path }})"></div>
                         </div>
                     </li>
-                    <li class="mix Interno">
-                        <div class="image">
-                            <div class="image-container" style="background-image: url({{site.baseurl}}/img/workinprogress/nave.jpg)"></div>
-                        </div>
-                    </li>
-                    <li class="mix Interno">
-                        <div class="image">
-                            <div class="image-container" style="background-image: url({{site.baseurl}}/img/workinprogress/pequod.jpg)"></div>
-                        </div>
-                    </li>
-                    <li class="mix Interno">
-                        <div class="image">
-                            <div class="image-container" style="background-image: url({{site.baseurl}}/img/workinprogress/sedie.jpg)"></div>
-                        </div>
-                    </li>
-                    <li class="mix Interno">
-                        <div class="image">
-                            <div class="image-container" style="background-image: url({{site.url}}{{site.baseurl}}/img/workinprogress/tavoli.jpg)"></div>
-                        </div>
-                    </li>
-                    <!--
-                  <li class="mix Websites">
-                    <a href="#">
-                      <img src="{{ site.baseurl }}/img/portfolio/work2.jpg" alt="">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>Tesla Motors</h2>
-                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="mix Graphic">
-                    <a href="#">
-                      <img src="{{ site.baseurl }}/img/portfolio/work3.jpg" alt="">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>Tesla Motors</h2>
-                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
-                        </div>
-                      </div>
-
-                    </a>
-                  </li>
-                  <li class="mix design">
-                    <a href="#">
-                      <img src="{{ site.baseurl }}/img/portfolio/work4.jpg" alt="">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>Tesla Motors</h2>
-                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="mix Video">
-                    <a href="#">
-                      <img src="{{ site.baseurl }}/img/portfolio/work5.jpg" alt="">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>Tesla Motors</h2>
-                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="mix Graphic">
-                    <a href="#">
-                      <img src="{{ site.baseurl }}/img/portfolio/work6.jpg" alt="">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>Tesla Motors</h2>
-                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  -->
+                    {% endif %}
+                    {% endfor %}
                 </ul>
               </div>
             </div>
