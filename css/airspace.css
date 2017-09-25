@@ -103,7 +103,8 @@ font header .navbar-default .navbar-nav li a:hover {
   background-position: 10% 0%;
   padding: 200px 0 280px 0;
   position: relative;
-}
+  border:2pc black;
+  }
 #slider:before {
   content: "";
   position: absolute;
@@ -709,7 +710,7 @@ font header .navbar-default .navbar-nav li a:hover {
   width: 20px;
 }
 .social-icons {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 .social-icons li {
   display: inline-block;
