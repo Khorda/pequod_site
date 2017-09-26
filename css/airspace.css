@@ -105,7 +105,7 @@ font header .navbar-default .navbar-nav li a:hover {
   position: relative;
   border:2pc black;
   background: linear-gradient(to left, #ddd, #eee);
-  opacity: 10;
+  opacity: 0,5;
   }
 #slider:before {
   content: "";
