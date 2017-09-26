@@ -104,8 +104,8 @@ font header .navbar-default .navbar-nav li a:hover {
   padding: 200px 0 280px 0;
   position: relative;
   border:2pc black;
-  background: linear-gradient(to left, #dddaea, #322e40);
-  opacity: 0.9;
+  background: linear-gradient(to left, #ddd, #eee);
+  opacity: 10;
   }
 #slider:before {
   content: "";
