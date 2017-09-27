@@ -303,8 +303,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #testimonial .testimonial-carousel {
   text-align: center;
   width: 75%;
-  border: 2px solid #000
-  border-radius: 10px;
+  border: 2px solid #483b8d
   padding: 24px;
   margin: 0 auto;
 }
