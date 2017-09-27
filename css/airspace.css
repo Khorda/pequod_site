@@ -387,7 +387,7 @@ font header .navbar-default .navbar-nav li a:hover {
   text-align: center;
 }
 #global-header .block h1 {
-  font-weight: 100;
+  font-weight: 400;
   font-size: 45px;
   letter-spacing: 6px;
   padding-bottom: 15px;
@@ -395,9 +395,9 @@ font header .navbar-default .navbar-nav li a:hover {
   text-transform: capitalize;
 }
 #global-header .block p {
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
   word-spacing: 3px;
 }
 /*--
