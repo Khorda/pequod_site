@@ -1,0 +1,32 @@
+---
+layout: page
+title: Menu
+permalink: /menu/
+---
+<!-- Slider Start -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>IL NOSTRO MENU</h1>
+          <p> T Spacialità</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--il menu -->
+
+
+
+<!--fine del menu -->
+{% for post in site.posts %}
+<div class="post-area">
+  <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
+  <p class="post-date">{{ post.date | date_to_long_string }}</p>
+  <p>
+    {{ post.content | strip_html | truncatewords: 50 }}
+  </p>
+</div>
+{% endfor %}
