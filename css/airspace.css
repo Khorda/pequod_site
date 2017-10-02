@@ -365,6 +365,9 @@ font header .navbar-default .navbar-nav li a:hover {
   background: url("../img/eventi.jpg") no-repeat;
   background-size: cover;
   padding-top: 150px;
+  background-attachment: fixed;
+    background-position: x:10%;
+    background-position: y:0%;
   padding-bottom: 107px;
   position: relative;
   background-attachment: fixed;
