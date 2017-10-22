@@ -285,7 +285,7 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #7B7B7B;
 }
 #testimonial .counter-box li {
-  width: 150px;
+  width: 50%;
   float: left;
   text-align: center;
   margin: 30px 0 30px;
