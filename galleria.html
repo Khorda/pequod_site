@@ -27,6 +27,7 @@ permalink: /galleria/
                 <ul>
                     <li class="filter" data-filter="all">Tutto</li>
                     <li class="filter" data-filter=".Cucina">Cucina</li>
+                    <li class="filter" data-filter=".Cucina">I Piatti</li>                  </li></li>
                     <li class="filter" data-filter=".Interno">Interno</li>
                     <li class="filter" data-filter=".Esterno">Esterno</li>
                     <li class="filter" data-filter=".Staff">Staff</li>
@@ -71,6 +72,17 @@ permalink: /galleria/
                     {% for image in site.static_files %}
                     {% if image.path contains 'img/cucina' %}
                     <li class="mix Cucina">
+                        <div class="image">
+                            <a href="{{ image.path }}" data-lightbox="{{ image.path }}" data-title="">
+                            <div class="image-container" style="background-image: url({{ image.path }})"></div>
+                            </a>
+                        </div>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                    {% for image in site.static_files %}
+                    {% if image.path contains 'img/piatti' %}
+                    <li class="mix piatti">
                         <div class="image">
                             <a href="{{ image.path }}" data-lightbox="{{ image.path }}" data-title="">
                             <div class="image-container" style="background-image: url({{ image.path }})"></div>
