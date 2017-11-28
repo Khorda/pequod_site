@@ -86,8 +86,7 @@ header .navbar-default .navbar-nav li a {
   color: #333333;
   padding: 10px 26px;
   font-size: 15px;
-  border: 2px;
-}
+  }
 font header .navbar-default .navbar-nav li a:hover {
   color: #000;
 }
@@ -791,7 +790,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	footer Start
 --*/
 footer {
-  background: #dedede;
+  background: #3b3b3b;
   text-align: center;
   padding-top: 48px;
   padding-bottom: 55px;
@@ -817,7 +816,7 @@ footer .footer-manu ul li {
 }
 footer .footer-manu ul li a {
   display: inline-block;
-  color: #494949;
+  color: #fff;
 }
 footer .footer-manu ul li a:hover {
   color: #000;
