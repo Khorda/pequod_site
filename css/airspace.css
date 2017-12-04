@@ -98,11 +98,11 @@ font header .navbar-default .navbar-nav li a:hover {
 --*/
 #slider {
   background: url("../img/esterno/vetrina-bg.jpg") no-repeat;
-  background-size: cover;
-  background-position: 10% 0%;
+  background-size: 80%;
+  background-position: center;
   padding: 200px 0 280px 0;
   position: relative;
-  border:2pc black;
+  border:10pc black;
 
   }
 #slider:before {
